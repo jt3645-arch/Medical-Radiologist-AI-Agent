@@ -10,7 +10,8 @@
 
 ## ✨ Key Features
 
-* **👁️ Automated Image Processing Pipeline:** Automatically splits composite medical images, binarizes lesion masks, generates visually clear overlays, and extracts quantitative 2D morphological features (Area, Perimeter, Circularity, etc.).
+* **🗄️ Native `.mat` Data Ingestion:** Robustly parses raw medical data formats (MATLAB `.mat` files, supporting both v7 and v7.3 `h5py` standards), extracting 2D image matrices and physician-annotated tumor masks directly from the Figshare brain tumor dataset.
+* **👁️ Unsupervised Segmentation & CV Pipeline:** Implements a highly customized, training-free computer vision pipeline (combining K-Means clustering, Canny edge detection, and morphological operations) to accurately segment lesions, calculate Dice scores, and generate visually clear BGR overlays.
 * **🧠 Multimodal Semantic Observation:** Utilizes OpenAI's Vision capabilities to analyze image overlays alongside extracted mathematical features, generating structured semantic observations (JSON format).
 * **📚 Retrieval-Augmented Generation (RAG):** Integrates `SentenceTransformers` and an `Annoy` vector database. The agent retrieves similar historical medical cases from a knowledge base to ground its diagnostic reasoning, significantly reducing LLM hallucinations.
 * **💰 Smart Local Caching:** Built-in caching mechanism (`_semantic.json`) for API responses. It skips redundant API calls if semantic observations already exist, saving time and API costs.
@@ -24,12 +25,13 @@
 
 ## 🏗️ Architecture & Workflow
 
-1.  **Data Ingestion:** Loads top retrieved medical images (PNG) and metadata.
-2.  **CV Processing (`cv2`, `numpy`):** Extracts quantitative features and creates annotated overlay panels.
-3.  **Semantic Agent (`OpenAI API`):** Analyzes the overlay and outputs structured medical findings.
-4.  **Knowledge Retrieval (`Annoy`, `SentenceTransformers`):** Embeds the query and fetches the top-K most similar historical cases.
-5.  **Report Generation:** An LLM synthesizes the quantitative data, semantic findings, and retrieved RAG context into a cohesive diagnostic report.
-6.  **Human-in-the-Loop:** Doctors review, chat, and refine the output via the Gradio UI.
+1.  **Raw Data Parsing (`scipy`, `h5py`):** Ingests raw `.mat` files to extract brain MRI images and ground-truth tumor masks.
+2.  **Segmentation & Evaluation:** Applies an unsupervised clustering algorithm to generate predicted masks and calculates performance metrics (Dice, IoU) against ground truth.
+3.  **CV Feature Extraction (`cv2`, `skimage`):** Extracts quantitative morphological features (Area, Perimeter, Circularity, etc.) and creates annotated overlay panels (saved as PNGs).
+4.  **Semantic Agent (`OpenAI API`):** Analyzes the generated overlay images and outputs structured medical findings.
+5.  **Knowledge Retrieval (`Annoy`):** Embeds the query and fetches the top-K most similar historical cases.
+6.  **Report Generation:** An LLM synthesizes the quantitative data, semantic findings, and retrieved RAG context into a cohesive diagnostic report.
+7.  **Human-in-the-Loop:** Doctors review, chat, and refine the output via the Gradio UI.
 
 ## 🚀 Getting Started
 
