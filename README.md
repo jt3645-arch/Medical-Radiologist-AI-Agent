@@ -90,5 +90,3 @@ Medical-Radiologist-AI-Agent/
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/jt3645-arch/Medical-Radiologist-AI-Agent/issues).
 
----
-*Developed with ❤️ by [jt3645-arch](https://github.com/jt3645-arch).*
