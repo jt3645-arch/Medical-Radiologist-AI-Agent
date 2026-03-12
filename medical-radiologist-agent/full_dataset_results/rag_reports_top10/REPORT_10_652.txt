@@ -1,0 +1,29 @@
+**EXAM:**  
+Brain MRI (2D slice evaluation)
+
+**TECHNIQUE:**  
+Limited 2D MRI slice analysis.
+
+**FINDINGS:**  
+- Size: approximately large, occupying approximately 9.6% of intracranial area on this slice.  
+- Lesion count: 1  
+- Morphology: well-defined boundary with brighter intensity compared to the surrounding brain tissue.
+
+**IMPRESSION:**  
+- Focal intracranial lesion on limited imaging.  
+- Further characterization recommended with a complete brain MRI protocol.
+
+**DIFFERENTIAL CONSIDERATIONS:**  
+- May include primary glial neoplasm (e.g., glioma).  
+- May include metastasis.  
+- May include tumefactive demyelination.  
+- Infection is not assessable without advanced imaging/clinical correlation.  
+- Differential is limited by lack of multiparametric sequences and clinical history.
+
+**RECOMMENDATIONS:**  
+- Correlate with clinical history and neurologic examination.  
+- Consider complete brain MRI protocol (T1/T2/FLAIR/DWI/ADC) and post-contrast imaging if clinically indicated.  
+- Consider comparison with prior imaging if available.
+
+**LIMITATIONS:**  
+- This report is based on a limited 2D slice, which may not fully characterize the lesion. Further imaging is necessary for comprehensive evaluation.

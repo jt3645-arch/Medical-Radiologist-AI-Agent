@@ -1,0 +1,32 @@
+**EXAM:**  
+MRI Brain (2D slice evaluation)
+
+**TECHNIQUE:**  
+Limited 2D imaging performed.
+
+**FINDINGS:**  
+- Size: approximately large, occupying ~5.6% of intracranial area on this slice.  
+- Diameter: maximum lesion diameter is approximately 23.1% of intracranial area.  
+- Location: coarse localization is unknown.  
+- Morphology: not specified.  
+- Signal: relative signal appearance is unknown (limited by available sequences).  
+- Comments: Bounding box and segmentation boundary evident.
+
+**IMPRESSION:**  
+- Focal intracranial lesion on limited imaging.  
+- Further characterization recommended with a complete brain MRI protocol.  
+
+**DIFFERENTIAL CONSIDERATIONS:**  
+- Primary glial neoplasm (e.g., glioma) may be considered.  
+- Metastasis may be a possibility.  
+- Tumefactive demyelination may also be a consideration.  
+- Infection is not assessable without DWI/clinical correlation.  
+- Differential is limited by lack of multiparametric sequences and clinical history.
+
+**RECOMMENDATIONS:**  
+- Correlate with clinical history and neurologic examination.  
+- Consider complete brain MRI protocol (T1/T2/FLAIR/DWI/ADC) and post-contrast imaging if clinically indicated.  
+- Consider comparison with prior imaging if available.
+
+**LIMITATIONS:**  
+- This report is based on a single 2D slice and does not represent the entire intracranial context. Further imaging is required for comprehensive evaluation.
