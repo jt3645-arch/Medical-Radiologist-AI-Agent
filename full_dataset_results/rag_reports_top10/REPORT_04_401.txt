@@ -1,0 +1,29 @@
+### EXAM:
+MRI Brain (Limited 2D Slice)
+
+### TECHNIQUE:
+A single 2D slice was obtained, focusing on the supratentorial compartment.
+
+### FINDINGS:
+- Location: Supratentorial compartment.
+- Size: Approximately large, occupying approximately 8.3% of the intracranial area on this slice.
+- Count: One lesion identified.
+- Morphology: Details not specified.
+- Signal: Relative signal appearance not assessable due to limited imaging sequences.
+
+### IMPRESSION:
+- Focal intracranial lesion in the supratentorial compartment on limited imaging.
+- Size and location characterized but morphology remains unspecified.
+- Further characterization recommended.
+
+### DIFFERENTIAL CONSIDERATIONS:
+- Differential considerations may include primary glial neoplasm (e.g., glioma), metastasis, and tumefactive demyelination. Infection cannot be assessed without DWI or clinical correlation.
+- Differential is limited by lack of multiparametric sequences and clinical history.
+
+### RECOMMENDATIONS:
+- Correlate with clinical history and neurologic examination.
+- Consider a complete brain MRI protocol (T1/T2/FLAIR/DWI/ADC) and post-contrast imaging if clinically indicated.
+- Consider comparison with prior imaging if available.
+
+### LIMITATIONS:
+- Findings are based on a single 2D slice, which may not fully characterize the lesion or its features.
