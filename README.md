@@ -3,9 +3,8 @@
 
 
 [![Python Version](https://img.shields.io/badge/python-3.8%2B-blue.svg)](https://www.python.org/)
-[![OpenAI](https://img.shields.io/badge/Model-OpenAI%20GPT--4V-green.svg)](https://openai.com/)
+[![OpenAI](https://img.shields.io/badge/Model-OpenAI%20GPT--4o--mini-green.svg)](https://openai.com/)
 [![Gradio](https://img.shields.io/badge/UI-Gradio-orange.svg)](https://gradio.app/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 **Medical Radiologist AI Agent** is a multimodal, Retrieval-Augmented Generation (RAG) powered AI assistant designed to automate and enhance the workflow of medical image analysis. By combining traditional computer vision techniques with state-of-the-art Large Language Models (LLMs), this agent acts as an interactive co-pilot for radiologists, generating professional, explainable, and evidence-based diagnostic reports.
 
@@ -41,42 +40,53 @@
 
 ### Installation
 
-1. Clone this repository:
-   ```bash
-   git clone [https://github.com/jt3645-arch/Medical-Radiologist-AI-Agent.git](https://github.com/jt3645-arch/Medical-Radiologist-AI-Agent.git)
-   cd Medical-Radiologist-AI-Agent
-2. Install the required dependencies:
-   pip install -r requirements.txt
+**1. Clone this repository:**
 
-Running the Agent
+```bash
+git clone https://github.com/jt3645-arch/Medical-Radiologist-AI-Agent.git
+cd Medical-Radiologist-AI-Agent
+```
+
+**2. Install the required dependencies:**
+
+```bash
+pip install -r requirements.txt
+```
+
+### Running the Agent
+
 This project is optimized for Jupyter Notebook / Google Colab environments.
 
-Open 6895project_radiologist_agent.ipynb.
+**Step 1:** Open `6895project_radiologist_agent.ipynb`.
+**Step 2:** Set your OpenAI API Key securely when prompted in the notebook.
+**Step 3:** Run all cells (`Run All`). 
+**Step 4:** At the final cell, a **Gradio web interface link** will be generated. Click the public URL to start interacting with your Radiologist Agent!
 
-Set your OpenAI API Key securely when prompted in the notebook.
+## 📂 Project Structure
 
-Run all cells (Run All).
-
-At the final cell, a Gradio web interface link will be generated. Click the public URL to start interacting with your Radiologist Agent!
-
-📂 Project Structure
+```text
 Medical-Radiologist-AI-Agent/
 ├── 6895project_radiologist_agent.ipynb  # Main pipeline and UI launcher
 ├── requirements.txt                     # Python dependencies
 ├── data/                                # 10 raw sample images for testing/reproduction
-├── full_dataset_results/                # Pre-computed reports, splits, and metrics for the full dataset
+├── full_dataset_results/                # Pre-computed reports, splits, and metrics
 └── outputs_doc/                         # Auto-generated workspace for the test run
     ├── panels/                          # Split original & mask images
     ├── overlays/                        # Annotated BGR overlays & Semantic JSON caches
     └── final_reports/                   # Generated text reports
+```
 
-ech Stack
-Core Logic: Python, Pandas, Numpy
+## 🛠️ Tech Stack
 
-Computer Vision: OpenCV (cv2), Pillow (PIL)
+* **Core Logic:** Python, Pandas, Numpy
+* **Computer Vision:** OpenCV (`cv2`), Pillow (`PIL`)
+* **LLM & Vision:** OpenAI API (`gpt-4o` / `gpt-4o-mini`)
+* **Vector DB & Embedding:** Annoy, SentenceTransformers (`all-MiniLM-L6-v2`)
+* **User Interface:** Gradio
 
-LLM & Vision: OpenAI API (gpt-4o / gpt-4-turbo)
+## 🤝 Contributing
 
-Vector DB & Embedding: Annoy, SentenceTransformers (all-MiniLM-L6-v2)
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/jt3645-arch/Medical-Radiologist-AI-Agent/issues).
 
-User Interface: Gradio
+---
+*Developed with ❤️ by [jt3645-arch](https://github.com/jt3645-arch).*
