@@ -60,8 +60,11 @@ pip install -r requirements.txt
 This project is optimized for Jupyter Notebook / Google Colab environments.
 
 **Step 1:** Open `6895project_radiologist_agent.ipynb`.
+
 **Step 2:** Set your OpenAI API Key securely when prompted in the notebook.
+
 **Step 3:** Run all cells (`Run All`). 
+
 **Step 4:** At the final cell, a **Gradio web interface link** will be generated. Click the public URL to start interacting with your Radiologist Agent!
 
 ## 📂 Project Structure
